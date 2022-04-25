@@ -1,7 +1,7 @@
 class Ninja {
 	constructor(name, salud, velocidad, fuerza) {
 		this.name = name;
-		this.salud = salud || 0;
+		this.salud = salud || 100;
 		this.velocidad = velocidad || 3;
 		this.fuerza = fuerza;
 	}
@@ -9,7 +9,9 @@ class Ninja {
 		console.log(this.name);
 	}
 	showStats() {
-		console.log(this.name, this.salud, this.velocidad);
+		console.log(
+			`Nombre: ${this.name}, Salud: ${this.salud}, Velocidad: ${this.velocidad}, Fuerza: ${this.fuerza}`
+		);
 	}
 	drinkSake() {
 		this.salud += 10;
